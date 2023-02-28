@@ -43,7 +43,7 @@ function App() {
             }}
           />
         </div>
-        <div className="px-2">
+        <div className="overflow-hidden">
           <div className="p-5 flex flex-col w-full h-full overflow-auto">
             <div
               className="prose lg:prose-xl"
