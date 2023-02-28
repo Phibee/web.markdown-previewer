@@ -3,5 +3,33 @@
 @tailwind utilities;
 
 textarea {
-  border: 1px solid #dedede;
+  border: 1px solid rgba(222, 222, 222, 0.1);
+  /* background-color: #1e293b; */
+  border-radius: 6px;
+  outline: none;
+  color: white;
+  padding: 1.5rem;
+  @apply bg-gray-800;
+}
+
+.prose :where(table):not(:where([class~='not-prose'] *)) {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.prose :where(tbody tr):not(:where([class~='not-prose'] *)) {
+  border-bottom: none !important;
+}
+
+.prose :where(p):not(:where([class~='not-prose'] *)) {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.hljs-ln-numbers {
+  opacity: 0.5;
+}
+
+.prose pre {
+  padding: 0;
 }
